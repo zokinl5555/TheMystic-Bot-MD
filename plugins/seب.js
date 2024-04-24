@@ -4,9 +4,9 @@ let handler = async (m, { conn, text }) => {
   await m.reply(`تم تغيير البادئة إلى  *${text}*`)
 }
 
-handler.help = ['setprefix'].map(v => v + ' [البادئة]')
+handler.help = ['بو'].map(v => v + ' [البادئة]')
 handler.tags = ['new']
-handler.command = /^(setprefix|بدء)$/i
+handler.command = /^(بو|بر)$/i
 handler.owner = true
 
 export default handler
